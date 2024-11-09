@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASKLY</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="logo" />
+      <h1>TASKLY</h1>
+      <div class="buttons">
+        <button class="theme">Theme</button>
+        <!-- <button class="user"><i class="fa-solid fa-user fa-xl"></i></button> -->
+      </div>
+    </nav>
+
+    <div class="sub-head">
+      <h2>-GET IT DONE</h2>
+    </div>
+
+    <main>
+      <div class="start">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+
+      <div class="input-form">
+        <form action="">
+          <input
+            type="text"
+            name="headline"
+            placeholder="Enter the Task Headline"
+            required
+          />
+          <textarea
+            placeholder="Enter the Task Description"
+            name="description"
+            rows="5"
+            cols="30"
+            required
+          ></textarea>
+          <div class="priority">
+            <label for="priority">Priority</label>
+            <select name="priority" id="priority">
+              <option value="High">High</option>
+              <option value="Low">Low</option>
+            </select>
+          </div>
+          <div class="form-buttons">
+            <input type="submit" class="submit" />
+            <button class="cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="tasks">
+        <div class="incomplete">
+          <ul class="incomplete-tasklist">
+
+          </ul>
+        </div>
+        <div class="complete">
+          <ul class="complete-tasklist">
+            
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
